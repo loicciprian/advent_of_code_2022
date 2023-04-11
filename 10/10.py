@@ -61,7 +61,7 @@ for op in instructions:
     if n in [x-1,x,x+1]:
         CRT += '#'
     else:
-        CRT += '.'
+        CRT += ' '
         
 #     print(f'cycle : {len(X)} \nX : {x}\nCRT : {CRT} \n---------------\n')
     
@@ -74,12 +74,11 @@ for op in instructions:
         if n in [x-1,x,x+1]:
             CRT += '#'
         else:
-            CRT += '.'
+            CRT += ' '
         
 #         print(f'cycle : {len(X)} \nX : {x}\nCRT : {CRT} \n---------------\n')
     
 print(f'day 10, part 2 : \n')
-
 a,b = 0,40
 for _ in range(6):
     print(CRT[a:b])
