@@ -1,8 +1,10 @@
+import os
+import aocd
 import numpy as np
 
 
 # init
-with open("10/10_input.txt") as f:
+with open("10_input.txt") as f:
     instructions = f.read().strip().split("\n")
 
 # Part 1
@@ -35,10 +37,6 @@ print(f'day 10, part 1 : {np.sum(signal_strength)}')
 
 
 # Part 2
-
-# init
-with open("10_input.txt") as f:
-    instructions = f.read().strip().split("\n")
     
 # Cycle   1 -> ######################################## <- Cycle  40
 # Cycle  41 -> ######################################## <- Cycle  80
@@ -79,6 +77,7 @@ for op in instructions:
 #         print(f'cycle : {len(X)} \nX : {x}\nCRT : {CRT} \n---------------\n')
     
 print(f'day 10, part 2 : \n')
+
 a,b = 0,40
 for _ in range(6):
     print(CRT[a:b])
